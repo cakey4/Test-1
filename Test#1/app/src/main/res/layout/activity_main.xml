@@ -40,4 +40,9 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp" />
 
+    <Button
+        android:id="@+id/button_second_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_activity"/>
 </LinearLayout>
