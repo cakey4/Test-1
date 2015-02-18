@@ -36,4 +36,9 @@
         android:background="#00ff00"
         android:textColor="#0000ff" />
 
+    <Button
+        android:id="@+id/button_second_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_activity"/>
 </LinearLayout>

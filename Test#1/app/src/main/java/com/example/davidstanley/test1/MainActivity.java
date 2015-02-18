@@ -1,5 +1,6 @@
 package com.example.davidstanley.test1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -27,6 +28,18 @@ public class MainActivity extends ActionBarActivity {
                 Log.d("uxc", "button clicked");
             }
         });
+
+        // Start the Second Activity
+        Button secondActivityButton;
+        secondActivityButton = (Button) findViewById(R.id.button_second_activity);
+        secondActivityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 
