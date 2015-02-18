@@ -7,21 +7,33 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#ff0000">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/uriah_cobb" />
+        android:text="@string/uriah_cobb"
+        android:textSize="24sp"
+        android:layout_marginBottom="7dp"
+        android:textColor="#0000ff" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+        android:textSize="24sp"
+        android:textColor="#0000ff" />
+
     <Button
         android:id="@+id/button_click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/click_here"/>
+        android:text="@string/click_here"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="bottom|center"
+        android:background="#00ff00"
+        android:textColor="#0000ff" />
 
 </LinearLayout>
