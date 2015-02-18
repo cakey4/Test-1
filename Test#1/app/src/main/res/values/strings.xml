@@ -7,4 +7,11 @@
     <string name="uriah_cobb">Uriah Cobb</string>
     <string name="click_here">Click Here</string>
 
+    <!-- Strings for the Second Activity -->
+    <string name="second_activity">Second Activity</string>
+    <string name="type_here">Type Here</string>
+    <string name="enter">Enter</string>
+    <string name="click_me">Click Me!</string>
+
+
 </resources>
