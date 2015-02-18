@@ -8,9 +8,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    TextView displayName;
+    EditText input;
+    Button buttonClick;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +25,17 @@ public class MainActivity extends ActionBarActivity {
 
         Log.d("uxc", "inside on create");
 
-        Button buttonClick;
+
+        displayName = (TextView) findViewById(R.id.display);
+        input = (EditText) findViewById(R.id.input);
         buttonClick = (Button) findViewById(R.id.button_click);
 
         buttonClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("uxc", "button clicked");
+                String inputString = input.getText().toString();
+                displayName.setText(inputString);
             }
         });
 

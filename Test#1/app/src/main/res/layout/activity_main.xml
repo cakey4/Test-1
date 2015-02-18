@@ -8,24 +8,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#ffffff"
-    android:nestedScrollingEnabled="true">
+    android:background="#ff000000"
+    android:nestedScrollingEnabled="true"
+    android:weightSum="1">
 
     <TextView
+        android:id="@+id/display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/uriah_cobb"
         android:textSize="24sp"
         android:layout_marginBottom="7dp"
-        android:textColor="#ff0006ff"
+        android:textColor="#ffffff"
         android:layout_gravity="center"
         android:gravity="center_horizontal" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/input"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/button_click"
@@ -35,7 +38,7 @@
         android:textSize="24sp"
         android:layout_marginTop="30dp"
         android:layout_gravity="bottom|center"
-        android:background="#b90300ff"
+        android:background="#d80300ff"
         android:textColor="#ffffff"
         android:paddingLeft="24dp"
         android:paddingRight="24dp" />
@@ -44,5 +47,32 @@
         android:id="@+id/button_second_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/second_activity"/>
+        android:text="@string/second_activity"
+        android:background="#ff0008ff"
+        android:textColor="#ffffff" />
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analogClock"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Is mayonasse an instrument?"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No Patrick, mayonasse is not an instrument."
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
 </LinearLayout>
